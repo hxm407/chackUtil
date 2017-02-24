@@ -1,7 +1,7 @@
 package gov.demo.util;
 /**
  * 身份证号码校验
- *
+ * @author hanxm
  */
 public class CheckIdCard {
 	/**  
@@ -15,10 +15,10 @@ public class CheckIdCard {
 	 * （2）计算模 Y = mod(S, 11) （3）通过模得到对应的校验码 Y: 0 1 2 3 4 5 6 7 8 9 10 校验码: 1 0 X 9 8 7 6 5 4 3 2  
 	 */ 
 	// wi =2(n-1)(mod 11)
-	final int[] wi = { 7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1 };
+	private final int[] wi = { 7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1 };
 
 	// verify digit
-	final String[] vi = { "1", "0", "X", "9", "8", "7", "6", "5", "4", "3", "2"};
+	private final String[] vi = { "1", "0", "X", "9", "8", "7", "6", "5", "4", "3", "2"};
 
 	private int[] ai = new int[18];
 
@@ -41,7 +41,7 @@ public class CheckIdCard {
 	}
 
 	// get verify
-	public String getVerify(String eightcardid) {
+	private String getVerify(String eightcardid) {
 		int remaining = 0;
 
 		if (eightcardid.length() == 18) {
@@ -65,7 +65,7 @@ public class CheckIdCard {
 	}
 
 	// 15 update to 18
-	public String uptoeighteen(String fifteencardid) {
+	private String uptoeighteen(String fifteencardid) {
 		String eightcardid = fifteencardid.substring(0, 6);
 		eightcardid = eightcardid + "19";
 		eightcardid = eightcardid + fifteencardid.substring(6, 15);

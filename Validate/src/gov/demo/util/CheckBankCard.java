@@ -30,7 +30,7 @@ public class CheckBankCard {
         * @param nonCheckCodeBankCard 
         * @return 
         */  
-       public static char getBankCardCheckCode(String nonCheckCodeBankCard){  
+       private static char getBankCardCheckCode(String nonCheckCodeBankCard){  
            if(nonCheckCodeBankCard == null || nonCheckCodeBankCard.trim().length() == 0  
                    || !nonCheckCodeBankCard.matches("\\d+")) {  
                //如果传的不是数据返回N  
