@@ -1,4 +1,4 @@
-package gov.demo.util;
+package gov.servyou.commons.util;
 /**
  * 校验银行卡号
  * @author hanxm

@@ -1,4 +1,4 @@
-package gov.demo.util;
+package gov.servyou.commons.util;
 /**
  * 身份证号码校验
  * @author hanxm

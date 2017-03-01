@@ -1,4 +1,4 @@
-package gov.demo.util;
+package gov.servyou.commons.util;
 
 import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;

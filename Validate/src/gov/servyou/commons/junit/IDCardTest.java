@@ -1,6 +1,6 @@
-package gov.demo.junit;
+package gov.servyou.commons.junit;
 
-import gov.demo.util.CheckIdCard;
+import gov.servyou.commons.util.CheckIdCard;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;

@@ -1,6 +1,6 @@
-package gov.demo.junit;
+package gov.servyou.commons.junit;
 
-import gov.demo.util.CheckBankCard;
+import gov.servyou.commons.util.CheckBankCard;
 import junit.framework.TestCase;
 
 import org.junit.Test;

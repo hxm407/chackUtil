@@ -1,4 +1,4 @@
-package gov.demo.util;
+package gov.servyou.commons.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
